@@ -1,3 +1,5 @@
+package balaboba;
+
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Objects;
