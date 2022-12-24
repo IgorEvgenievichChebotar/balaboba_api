@@ -1,8 +1,11 @@
 package balaboba;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String... args) {
-        System.out.println(args[0] + " ");
-        System.out.println(Balaboba.continueText(args[0]));
+    public static void main(String... args) throws IOException {
+        String pathToFile = args[0]; // путь к файлу, где есть текст, который надо продолжить
+        Balaboba balaboba = new Balaboba(pathToFile);
+        balaboba.writeToFileContinuedText();
     }
 }
